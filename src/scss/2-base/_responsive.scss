@@ -1,0 +1,42 @@
+.d-mobile-up-none { //display none on sizes larger than $width-mobile
+  @media (min-width: $width-mobile) {
+    display: none;
+  }
+}
+
+.d-mobile-down-none { //display none on sizes smaller than $width-tablet
+  @media (max-width: $width-mobile) {
+    display: none;
+  }
+}
+
+.d-tablet-up-none { //display none on sizes larger than $width-tablet
+  @media (min-width: $width-tablet) {
+    display: none;
+  }
+}
+
+.d-desktop-up-none {
+  @media (min-width: $width-desktop-xl) {
+    display: none;
+  }
+}
+
+
+.d-tablet-down-none { //display none on sizes smaller than $width-tablet
+  @media (max-width: $width-tablet) {
+    display: none;
+  }
+}
+
+.d-desktop-down-none { //display none on sizes smaller than $width-desktop
+  @media (max-width: $width-desktop) {
+    display: none;
+  }
+}
+
+.d-desktop-xl-down-none { //display none on sizes smaller than $width-desktop
+  @media (max-width: $width-desktop-xl) {
+    display: none;
+  }
+}

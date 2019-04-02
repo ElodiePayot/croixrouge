@@ -1,0 +1,93 @@
+html {font-size: $font-size-rem !important;}
+body {font-size: $font-size-rem !important;}
+
+
+
+//titles
+
+h1 {
+  font-size: $font-size-biggest;
+  color: #453F3A;
+  font-family: $font-fam-titles;
+  font-weight: 700;
+  line-height: 6.8rem;
+  @media (max-width: 1100px) {
+    font-size: $font-size-biggest * 0.8;
+  }
+  @media (max-width: 885px) {
+    font-size: $font-size-biggest * 0.6;
+  }
+  @media (max-width: $width-mobile-sm) {
+    font-size: $font-size-biggest * 0.5;
+  }
+}
+
+h2 {
+  font-size: $font-size-bigger;
+  color: $text-color-light;
+  font-family: $font-fam-titles;
+  font-weight: 500;
+  line-height: 5rem;
+  @media (max-width: $width-mobile) {
+    font-size: $font-size-biggest * 0.55;
+  }
+  @media (max-width: $width-mobile-sm) {
+    font-size: $font-size-biggest * 0.5;
+  }
+}
+
+h3 {
+  font-size: $font-size-big;
+  font-family: $font-fam-titles;
+  color: black;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: $font-size-base;
+  font-family: $font-fam-titles;
+  color: $text-color;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: $font-size-small;
+  font-family: $font-fam-titles;
+  color: $text-color;
+  font-weight: 300;
+}
+
+//paragraphs
+
+p {
+  color: $text-color;
+  font-size: $font-size-base;
+  font-family: $font-fam-p;
+  line-height: 2.6rem;
+  @media (max-width: $width-mobile) {
+    font-size: $font-size-base * 0.9;
+  }
+}
+
+//links
+
+a {
+  font-size: $font-size-base;
+  font-family: $font-fam-p;
+  color: #30302F;
+  font-weight: 400;
+  @include transition(0.3s);
+  &:hover {
+    @include transition(0.3s);
+  }
+}
+
+.logo {
+  height: 24px;
+  width: 84px !important;
+}
+
+.icon {
+  height: 8px !important;
+  width: 10px !important;
+}

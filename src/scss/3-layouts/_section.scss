@@ -1,0 +1,12 @@
+//global styles
+
+.section {
+  padding: 60px 0;
+  background-size: cover;
+}
+
+.section-lg {padding: 100px 0;}
+
+.text-container {padding: 0px 300px;
+  @media (max-width: $width-tablet) {padding: 0px 50px}
+}

@@ -1,0 +1,181 @@
+//btn-1: classic btn with white text. Can be change in all main & secondary colors and in white, grey and black. Outlined options.
+
+.btn-1 {
+  display: inline-block;
+  padding: 5px 30px;
+  font-size: $font-size-base;
+  @include rounded-border (50px);
+  @include transition (0.3s);
+
+  &.main-color-btn {
+    color: white;
+    background-color: $main-color;
+    &:hover {
+      background-color: darken($main-color, 20%);
+    }
+    &.outlined {
+      color: $main-color !important;
+      background-color: transparent !important;
+      border: 1px solid $main-color !important;
+      &:hover {
+          background-color: $main-color;
+          border: 1px solid transparent;
+          color: white;
+          @include transition(0.3s);
+        }
+      }
+    }
+
+  &.main-color-dark-btn {
+    color: white;
+    background-color: $main-color-dark;
+    &:hover {
+      background-color: lighten($main-color-dark, 20%);
+    }
+    &.outlined {
+      color: $main-color-dark !important;
+      background-color: transparent !important;
+      border: 1px solid $main-color-dark !important;
+      &:hover {
+          background-color: $main-color-dark;
+          border: 1px solid transparent;
+          color: white;
+          @include transition(0.3s);
+        }
+      }
+    }
+
+  &.main-color-light-btn {
+    color: white;
+    background-color: $main-color-light;
+    &:hover {
+      background-color: darken($main-color-light, 20%);
+    }
+    &.outlined {
+      color: $main-color-light !important;
+      background-color: transparent !important;
+      border: 1px solid $main-color-light !important;
+      &:hover {
+          background-color: $main-color-light;
+          border: 1px solid transparent;
+          color: white;
+          @include transition(0.3s);
+        }
+      }
+    }
+
+  &.secondary-color-btn {
+    color: white;
+    background-color: $secondary-color;
+    &:hover {
+      background-color: darken($secondary-color, 20%);
+    }
+    &.outlined {
+      color: $secondary-color !important;
+      background-color: transparent !important;
+      border: 1px solid $secondary-color !important;
+      &:hover {
+          background-color: $secondary-color;
+          border: 1px solid transparent;
+          color: white;
+          @include transition(0.3s);
+        }
+      }
+    }
+
+  &.secondary-color-dark-btn {
+    color: white;
+    background-color: $secondary-color-dark;
+    &:hover {
+      background-color: lighten($secondary-color-dark, 20%);
+    }
+    &.outlined {
+      color: $secondary-color-dark !important;
+      background-color: transparent !important;
+      border: 1px solid $secondary-color-dark !important;
+      &:hover {
+          background-color: $secondary-color-dark;
+          border: 1px solid transparent;
+          color: white;
+          @include transition(0.3s);
+        }
+      }
+    }
+
+  &.secondary-color-light-btn {
+    color: white;
+    background-color: $secondary-color-light;
+    &:hover {
+      background-color: darken($secondary-color-light, 20%);
+    }
+    &.outlined {
+      color: $secondary-color-light !important;
+      background-color: transparent !important;
+      border: 1px solid $secondary-color-light !important;
+      &:hover {
+          background-color: $secondary-color-light;
+          border: 1px solid transparent;
+          color: white;
+          @include transition(0.3s);
+        }
+      }
+    }
+
+    &.black-btn {
+      color: white;
+      background-color: black;
+      &:hover {
+        background-color: lighten(black, 20%);
+      }
+      &.outlined {
+        color: black !important;
+        background-color: transparent !important;
+        border: 1px solid black !important;
+        &:hover {
+            background-color: black;
+            border: 1px solid transparent;
+            color: white;
+            @include transition(0.3s);
+          }
+        }
+      }
+
+      &.white-btn {
+        color: black;
+        background-color: white;
+        &:hover {
+          background-color: darken(white, 20%);
+        }
+        &.outlined {
+          color: white !important;
+          background-color: transparent !important;
+          border: 1px solid white !important;
+          &:hover {
+              background-color: white;
+              border: 1px solid transparent;
+              color: black;
+              @include transition(0.3s);
+            }
+          }
+        }
+
+        &.grey-btn {
+          color: black;
+          background-color: $grey;
+          &:hover {
+            background-color: darken($grey, 20%);
+          }
+          &.outlined {
+            color: $grey !important;
+            background-color: transparent !important;
+            border: 1px solid $grey !important;
+            &:hover {
+                background-color: $grey;
+                border: 1px solid transparent;
+                color: black;
+                @include transition(0.3s);
+              }
+            }
+          }
+
+  }

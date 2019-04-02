@@ -1,0 +1,79 @@
+//media-queries
+
+$width-mobile-sm: 320px; //based on iphone 5
+
+$width-mobile: 600px;
+
+$width-tablet: 1024px;
+
+$width-desktop: 1025px; //based on ipad pro (larger than)
+
+$width-desktop-xl: 1265px;
+
+
+
+//font-size rem normalizing
+// body is 62.5% so 10px=1rem
+
+$font-size-rem: 62.5%;
+
+$font-size-biggest: 6rem;
+$font-size-bigger: 4rem;
+$font-size-big: 2rem;
+$font-size-base: 1.2rem;
+$font-size-small: 1rem;
+$font-size-smaller: 0.9rem;
+$font-size-smallest: 0.8rem;
+
+
+
+
+//font-families
+
+$font-fam-p: PT Sans, sans-serif;
+$font-fam-titles: PT Serif, serif;
+
+
+
+// website colors
+
+$main-color: #DA4C5D; //red
+
+$main-color-dark: #D02944; //red dark
+
+$main-color-light: #D02944; //red dark
+
+$secondary-color: #fdcc50;
+
+$secondary-color-dark: #FFBDC5;
+
+$secondary-color-light: #FFBDC5;
+
+$text-color: #000000; //black
+
+$text-color-light: #FFFFFF; //white
+
+
+
+//common colors
+
+$yellow: #fdcc50;
+$blue: #4469b0;
+$dark-blue: #478fdd;
+$red: #db5048;
+$pink: #d648db;
+$pale-pink: #cca2d0;
+
+
+//greys
+$grey: #E9EBEE;
+$darkest-grey: darken($grey, 30%);
+$darker-grey: darken($grey, 20%);
+$dark-grey: darken($grey, 10%);
+$light-grey: lighten($grey, 10%);
+$lighter-grey: lighten($grey, 20%);
+$lightest-grey: lighten($grey, 30%);
+
+//page-wrapper sizing
+
+$width-wrapper: 1270px;
