@@ -1,0 +1,140 @@
+body {
+  background-color: black;
+}
+
+.col-img {
+ @media (max-width: 1023px) {
+   width: 100%;
+ }
+ @media (max-width: 767px) {
+   background-size: 140%;
+   background-position: 12% 20%;
+ }
+  width: 50%;
+  background-image:  url('../img/visual-1.jpg');
+  background-repeat: no-repeat;
+  top: -70px;
+  background-size: cover;
+  position: absolute;
+  right: 0;
+  z-index: 0;
+  height: 100vh;
+  .text-img {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    p {font-size: $font-size-bigger;}
+  }
+}
+
+.col-txt {
+  @media (max-width: 1023px) {
+    text-align: center;
+  }
+  @media (max-width: 767px) {
+    text-align: center;
+    width: 400px;
+    margin-top: 200px;
+    p {
+      margin: 10px 0 15px 0 !important;
+      font-size: 1.6rem !important;
+    }
+  }
+  position: relative;
+  padding-top: 105px;
+}
+
+.donation-row {
+  max-width: $width-wrapper;
+  margin: auto;
+  display: flex;
+  position: relative;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 1023px) {
+    flex-direction: column;
+  }
+}
+.donation-box {
+  @media (max-width: 767px) {
+    width: 100%;
+    padding: 10px;
+  }
+  width: 500px;
+  background-color: $main-color;
+  padding: 20px;
+  p {color: white;}
+  .box-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    img {
+      width: 35px;
+      height: 35px;
+      margin-right: 10px;
+    }
+  }
+  .box-footer {
+    @media (max-width: 1023px) {
+      text-align: center;
+    }
+  }
+}
+
+.text-img {
+  margin-left: 30px;
+  @media (max-width: 1023px) {
+    margin-left: 0;
+    text-align: center;
+  }
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+
+.box-row {
+  max-width: 1400px;
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  position: relative;
+  @media (max-width: 1023px) {
+    flex-direction: column;
+  }
+  .column {
+    flex: 0 0 30%;
+    max-width: 30%;
+    @media (max-width: 1023px) {
+      margin: auto;
+      flex: 0 0 90%;
+      max-width: 90%;
+      margin-bottom: 30px;
+    }
+    .box-icon-top {
+      img {
+        @media (max-width: 1023px) {
+          max-width: 50%;
+        }
+      }
+      &:hover {
+        cursor: pointer;
+        .red-link {
+          text-decoration: underline;
+        }
+      }
+      .red-link {
+        margin-top: 20px;
+        align-self: flex-end;
+      }
+    }
+  }
+}
+
+.section-box {
+  text-align: center;
+  .btn-1 {
+    margin-top: 30px;
+  }
+}

@@ -1,3 +1,33 @@
-
-
- 
+.page-footer {
+  background-color: $main-color;
+  height: 60px;
+  width: 100%;
+  margin-top: 100px;
+  @media (max-width: 667px) {
+    margin-top: 50px;
+  }
+  .page-wrapper {
+    @media (max-width: 667px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    .social-media {padding-right: 0;}
+    .left-links {
+      color: black;
+      font-size: $font-size-base;
+      a {
+        color: $main-color-light;
+        text-decoration: underline;
+        margin-right: 10px;
+        font-size: $font-size-small;
+        font-weight: 300;
+        &:last-child {margin-left: 10px;}
+      }
+    }
+  }
+}

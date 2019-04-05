@@ -1,0 +1,102 @@
+.right-nav {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50px;
+  align-items: center;
+}
+
+.social-media, .nav-lang, .nav-primary {
+  li {
+    a {
+      color: $main-color-light;
+      font-size: $font-size-big;
+    }
+  }
+}
+
+.social-media {
+  @media (max-width: 767px) {
+    position: absolute;
+    right: -41px;
+    bottom: -18px;
+    li {padding-right: 20px !important;}
+  }
+  padding-right: 30px;
+  li {
+    display: inline-block;
+    padding-right: 10px;
+    a {
+      &:hover {color: white;}
+    }
+  }
+}
+
+.nav-lang {
+  display: block;
+  .nav-lang-trigger {
+    &:hover {
+      .nav-lang-active {
+        display: block !important;
+      }
+    }
+  }
+}
+
+.nav-active {
+  &.nav-lang-active {
+    width: 100px;
+    left: 0;
+  }
+  &.nav-primary-active {
+    width: 280px;
+    right: 0;
+  }
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: white;
+  text-align: left;
+  a {
+    display: block;
+    padding: 1.5rem 2rem;
+    &:hover {
+      background-color: $main-color-light;
+      color: white;
+    }
+  }
+}
+
+.nav-primary {
+  .nav-primary-trigger {
+    &:hover {
+      .nav-primary-active {
+        display: block !important;
+      }
+    }
+    .nav-primary-active {
+      display: none;
+    }
+  }
+}
+
+.nav-primary-trigger, .nav-lang-trigger {
+  position: relative;
+  display: block;
+  padding: 15px 26px 15px 12px;
+  &:hover {
+    background-color: white;
+  }
+  &:after {
+    content: '\f078';
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    color: $main-color-light;
+    position: absolute;
+    font-size: 1.2rem;
+    right: 8px;
+    top: 16px;
+  }
+}

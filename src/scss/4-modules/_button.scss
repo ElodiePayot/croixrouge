@@ -2,16 +2,23 @@
 
 .btn-1 {
   display: inline-block;
-  padding: 5px 30px;
+  padding: 18px;
+  font-family: $font-fam-p;
   font-size: $font-size-base;
-  @include rounded-border (50px);
+  cursor: pointer;
   @include transition (0.3s);
 
   &.main-color-btn {
     color: white;
     background-color: $main-color;
-    &:hover {
-      background-color: darken($main-color, 20%);
+    &.outlined-hover {
+      border: 1px solid $main-color !important;
+      &:hover {
+        color: $main-color !important;
+        background-color: white !important;
+        border: 1px solid $main-color !important;
+        @include transition (0.3s);
+      }
     }
     &.outlined {
       color: $main-color !important;

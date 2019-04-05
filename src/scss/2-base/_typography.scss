@@ -6,19 +6,20 @@ body {font-size: $font-size-rem !important;}
 //titles
 
 h1 {
-  font-size: $font-size-biggest;
-  color: #453F3A;
+  font-size: 4.8rem;
   font-family: $font-fam-titles;
+  color: white;
   font-weight: 700;
-  line-height: 6.8rem;
-  @media (max-width: 1100px) {
-    font-size: $font-size-biggest * 0.8;
+  line-height: 6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  @media (max-width: 1023px) {
+    font-size: 4rem;
+    line-height: 5rem;
   }
-  @media (max-width: 885px) {
-    font-size: $font-size-biggest * 0.6;
-  }
-  @media (max-width: $width-mobile-sm) {
-    font-size: $font-size-biggest * 0.5;
+  @media (max-width: 767px) {
+    font-size: 2.3rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -37,10 +38,11 @@ h2 {
 }
 
 h3 {
-  font-size: $font-size-big;
+  font-size: $font-size-bigger;
   font-family: $font-fam-titles;
   color: black;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 h4 {
@@ -62,6 +64,7 @@ h5 {
 p {
   color: $text-color;
   font-size: $font-size-base;
+  font-weight: 300;
   font-family: $font-fam-p;
   line-height: 2.6rem;
   @media (max-width: $width-mobile) {
@@ -75,16 +78,20 @@ a {
   font-size: $font-size-base;
   font-family: $font-fam-p;
   color: #30302F;
-  font-weight: 400;
   @include transition(0.3s);
   &:hover {
     @include transition(0.3s);
   }
 }
 
-.logo {
-  height: 24px;
-  width: 84px !important;
+.red-link {
+  color: $main-color;
+  font-weight: 600;
+  @include transition(0.3s);
+  &:hover {
+    @include transition(0.3s);
+    text-decoration: underline;
+  }
 }
 
 .icon {
